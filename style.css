@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color:#F0EBE0;
+    
 }
 
 header img {
@@ -99,28 +100,42 @@ header img {
     height: auto;
 }
 
+.products-container {
+    position: relative; /* 相対位置指定 */
+    max-width: 800px;
+    margin: 80px auto 0; /* 上に 80px の余白を持たせる */
+}
 
+.background-image {
+    position: absolute; /* 絶対位置指定 */
+    top: -200px; /* 上端からの位置 */
+    left: 0; /* 左端からの位置 */
+    width: 100%; /* 幅を.products-containerに合わせる */
+    z-index: -1; /* 商品一覧の背後に表示 */
+  }
 
+  .products-background {
+    width: 100%; /* 親要素の幅に合わせる */
+    height: 1200px; /* 高さを自動調整 */
+}
 
 .products {
+    position: relative; /* この要素を基準に位置を調整 */
+    z-index: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     margin: 0 auto;
     max-width: 800px;
-    background-image: url('https://ukiukiwine.com/XmasSite/path2.png');
-    
-    
-    background-repeat: no-repeat; 
-    background-position: center;
-    margin-top: 80px;
+    margin-top: 80px;   
 }
 
 .product {
     width: 212px;
     margin-bottom: 10px;
     box-sizing: border-box;
+    
 }
 
 /* レスポンシブ対応 */
@@ -142,26 +157,33 @@ header img {
     .product {
       width: calc(50% - 10px); /* 画面が狭くても2列で表示 */
     }
-    
+    .product img,
+    .product .description{
+      padding-left: 20px;
+    }
+    .product .purchase{
+        margin-left: 20px;
+    }
+   
     .side-logo,
     .right-logo {
-      width: 70%; /* コンテナの幅を取るようにする */
-      margin: 0 auto; /* 左右のマージンを自動にして中央揃え */
-      display: block; /* ブロック要素にする */
+      width: 70%; 
+      margin: 0 auto;
+      display: block; 
     }
     
     .side-logo img,
     .right-logo img {
-      width: 100%; /* 画像がコンテナの幅に合わせて伸縮するようにする */
-      height: auto; /* 画像の高さを自動調整 */
-      display: block; /* ブロック要素にして中央揃え */
-      margin: 0 auto; /* 画像を中央に揃える */
+      width: 100%; 
+      height: auto; 
+      display: block; 
+      margin: 0 auto; 
       padding: 20px;
     }
     
     .container,
     .content {
-      text-align: center; /* テキストやインライン要素を中央に揃える */
+      text-align: center; 
     }
     
     .right-logo .wrap {
@@ -170,8 +192,8 @@ header img {
         margin: 0 auto 10px; 
     }
     .wrap {
-        display: inline-block; /* ボタンがインラインブロック要素になるようにする */
-        margin-top: 10px; /* ボタンの上にマージンを追加 */
+        display: inline-block; 
+        margin-top: 10px; 
         
         transform: scale(1.5); 
         transform-origin: center; 
