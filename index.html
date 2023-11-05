@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whisky Gift</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+<body>
+<header>
+<img src="https://ukiukiwine.com/XmasSite/xmas2023.png" alt="Whisky Giftヘッダー画像" width="94%">
+</header>
+
+<div class="container">
+    <div class="side-logo">
+        <img src="https://ukiukiwine.com/XmasSite/logo0.png" alt="左サイドロゴ">  
+    </div>
+    <div class="content">
+        <div class="intro">
+            <h1>ギフトや贈り物におすすめのウイスキーをピックアップ！</h1>
+            <p>※ご希望のお客様にのみギフト箱・無料ラッピング・無料のしをお付け致します。<br>
+            ご注文時、備考欄に「ギフト箱・無料ラッピング・無料のし希望」 の旨を備考欄にご記載下さい。<br>
+            ご記載のない場合は、お付け致しかねますので、予めご了承くださいますようお願い申し上げます。</p>
+        </div>
+    </div>
+    <!--right-logoをcontentの右に配置する-->
+    <div class="right-logo">
+        <img src="https://ukiukiwine.com/XmasSite/gift.png" alt="右ロゴ">
+        <button class="wrap">ラッピングについて</button>
+    </div>
+</div>
+
+<!-- お世話人なった型へ-->
+<div class="message">
+    <div class="message1">
+        <img src="https://ukiukiwine.com/XmasSite/message1.png" alt="メッセージ1">
+        <img src="https://ukiukiwine.com/XmasSite/bottlelogo.png" alt="メッセージ2">
+    </div>
+    <div class="message2">
+        <img src="https://ukiukiwine.com/XmasSite/message2.png" alt="メッセージ2">
+    </div>
+</div>
+
+
+<!--商品一覧-->
+<div class="products">
+    <!-- 商品1 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products1.jpg" alt="商品1の画像">
+        <p>商品1の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <!-- 商品2 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products2.jpg" alt="商品1の画像">
+        <p>商品2の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <!-- 商品3 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products2.jpg" alt="商品1の画像">
+        <p>商品3の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <!-- 商品4 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products2.jpg" alt="商品1の画像">
+        <p>商品4の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <div class="product">
+        <img src="http://r-asp17.item-robot.com/upload/images/1685/default/10/products2.jpg" alt="商品1の画像">
+        <p>商品5の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <div class="product">
+        <img src="http://r-asp17.item-robot.com/upload/images/1685/default/10/products2.jpg" alt="商品1の画像">
+        <p>商品6の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products1.jpg" alt="商品1の画像">
+        <p>商品7の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <!-- 商品2 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products2.jpg" alt="商品1の画像">
+        <p>商品8の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+    <!-- 商品3 -->
+    <div class="product">
+        <img src="https://ukiukiwine.com/XmasSite/products2.jpg" alt="商品1の画像">
+        <p>商品9の説明</p>
+        <button class="purchase">購入する</button>
+    </div>
+ </div>   
+
+<div class="footer-image">
+        <img src="http://r-asp17.item-robot.com/upload/images/1685/default/11/01/check.jpg" alt="商品チェック">
+</div>
+
+<div class="image-wrapper">
+    <div class="image-container">
+        <img src="https://ukiukiwine.com/XmasSite/image1.png" alt="画像1">
+        <img src="https://ukiukiwine.com/XmasSite/image2.png" alt="画像2">
+        <img src="https://ukiukiwine.com/XmasSite/image3.png" alt="画像3">
+        <img src="https://ukiukiwine.com/XmasSite/image4.png" alt="画像4">
+    </div>
+</div>
+
+
+<div class="footlogo">
+    <img src="https://ukiukiwine.com/XmasSite/footerlogo.png" alt="ロゴ">
+</div>
+<footer>
+    <button class="rakuten">楽天市場TOPへ</button>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var originalParent = document.querySelector('.container'); 
+        var rightLogo = document.querySelector('.right-logo'); 
+        var wrapButton = document.querySelector('.right-logo .wrap'); 
+        var rightLogoImage = rightLogo.querySelector('img'); 
+        var footer = document.querySelector('footer'); 
+        var rightLogoOriginalNextSibling = rightLogo.nextSibling; 
+        var footLogo = document.querySelector('.footlogo'); 
+        var footLogoParent = footLogo.parentNode; 
+        var footLogoOriginalNextSibling = footLogo.nextSibling; 
+      
+        function moveElements() {
+            if (window.innerWidth <= 600) {
+                // 画面幅が600px以下の場合
+                footer.parentNode.insertBefore(rightLogo, footer); 
+                footer.parentNode.insertBefore(footLogo, footer); 
+                rightLogo.insertBefore(wrapButton, rightLogoImage); 
+            } else {
+                // 画面幅が600pxより大きい場合
+                originalParent.insertBefore(rightLogo, rightLogoOriginalNextSibling); 
+                rightLogo.insertBefore(rightLogoImage, wrapButton); 
+                footLogoParent.insertBefore(footLogo, footLogoOriginalNextSibling); 
+            }
+        }
+      
+        window.addEventListener('resize', moveElements);
+      
+        moveElements();
+    });
+    </script>
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var content = document.querySelector('.content');
+        var sideLogoImg = document.querySelector('.side-logo img');
+        var originalSideLogoSrc = sideLogoImg.src;
+    
+        function handleResize() {
+            if (window.innerWidth <= 600) {
+                // スマホサイズの時にはside-logoの画像をcontentの背景にして、サイズを70%に設定する
+                content.style.backgroundImage = 'url("' + originalSideLogoSrc + '")';
+                content.style.backgroundSize = '50%'; 
+                content.style.backgroundPosition = 'center';
+                content.style.backgroundRepeat = 'no-repeat';
+                sideLogoImg.style.display = 'none'; 
+            } else {
+                // スマホサイズではない時には背景を削除し元に戻す
+                content.style.backgroundImage = '';
+                content.style.backgroundSize = '';
+                content.style.backgroundPosition = '';
+                content.style.backgroundRepeat = '';
+                sideLogoImg.style.display = 'block'; 
+            }
+        }
+    
+        // イベントリスナーをウィンドウのリサイズに追加
+        window.addEventListener('resize', handleResize);
+    
+        // 初期表示時にもリサイズ関数を呼び出し
+        handleResize();
+    });
+    </script>
+    
+    
+
+  
+</body>
+</html>
+    

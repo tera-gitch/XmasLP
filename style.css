@@ -1,0 +1,268 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#F0EBE0;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    max-width: 100%;
+}
+
+
+.container {  
+        display: flex;
+        justify-content: center;
+        align-items: center; /* 子要素を縦方向の中央に配置 */
+        text-align: center;
+      }
+  
+
+.side-logo{
+    max-width: 200px;
+}
+
+.side-logo, .content .right-logo {
+    flex: 1; /* 子要素のflexの値を1に設定して、利用可能なスペースを均等に分ける */
+  }
+
+.side-logo img {
+    max-width: 200px; /* 画像がコンテナより大きくならないように設定 */
+    height: auto; /* 画像の高さを自動調整 */
+  }
+
+.right-logo {
+    text-align: right; /* ロゴを右寄せにする */
+    flex-direction: column; /* 子要素を縦に並べます */
+    align-items: center; 
+  }
+
+
+.right-logo img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-left:25px;
+    height: auto;
+    display: flex;
+    
+  }
+
+.wrap {
+    background-color: white;
+    color: #000000;
+    margin-top: 30px;
+    margin-right: 10px;
+    position: relative;
+    border: solid 1px #ffffff;
+}
+
+.wrap:hover {
+    background-color: #fcc2f5; /* ホバー時の背景色 */
+    cursor: pointer;
+}
+
+.wrap:active {
+    background-color: #bba4ba; /* クリック時の背景色 */
+}
+
+
+
+.intro {
+    text-align: center;
+}
+
+
+.message{
+    margin-top: 80px;
+    
+}
+
+
+.message1{
+    text-align: center;
+}
+.message1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.message2{
+    text-align: center;
+}
+
+.messaga2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+    background-image: url('https://ukiukiwine.com/XmasSite/path2.png');
+    
+    
+    background-repeat: no-repeat; 
+    background-position: center;
+    margin-top: 80px;
+}
+
+.product {
+    width: 212px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px); /* タブレットサイズ */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: calc(100% - 20px); /* スマートフォンサイズ */
+    }
+}
+
+
+/* スマートフォンの画面幅 */
+@media (max-width: 600px) {
+    .product {
+      width: calc(50% - 10px); /* 画面が狭くても2列で表示 */
+    }
+    
+    .side-logo,
+    .right-logo {
+      width: 70%; /* コンテナの幅を取るようにする */
+      margin: 0 auto; /* 左右のマージンを自動にして中央揃え */
+      display: block; /* ブロック要素にする */
+    }
+    
+    .side-logo img,
+    .right-logo img {
+      width: 100%; /* 画像がコンテナの幅に合わせて伸縮するようにする */
+      height: auto; /* 画像の高さを自動調整 */
+      display: block; /* ブロック要素にして中央揃え */
+      margin: 0 auto; /* 画像を中央に揃える */
+      padding: 20px;
+    }
+    
+    .container,
+    .content {
+      text-align: center; /* テキストやインライン要素を中央に揃える */
+    }
+    
+    .right-logo .wrap {
+        /* ボタンのスタイル */
+        display: block;
+        margin: 0 auto 10px; 
+    }
+    .wrap {
+        display: inline-block; /* ボタンがインラインブロック要素になるようにする */
+        margin-top: 10px; /* ボタンの上にマージンを追加 */
+        
+        transform: scale(1.5); 
+        transform-origin: center; 
+      }
+    .intro {
+        /* 左右にマージンを追加 */
+        margin: 0 10px;
+      }
+  }
+  
+
+
+
+.purchase {
+    background-color: #8B0000; 
+    color: white;            
+    border: none;            
+    padding: 10px 20px;        
+    font-size: 16px;          
+    position: relative;        
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%); /* 右下端だけをカット */
+    cursor: pointer;           
+}
+
+.purchase:hover {
+    background-color: #A52A2A; /* ホバー時の背景色 */
+}
+
+.purchase:active {
+    background-color: #B22222; /* クリック時の背景色 */
+}
+
+
+.footlogo {
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    margin-bottom: 30px;
+}
+
+
+footer {
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer img {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.image-container img {
+    width: 100%; /* 画像が親要素の幅に応じて調整される */
+    max-width: 400px; /* 画像の最大幅を400pxに設定 */
+    height: auto; /* 高さは自動で調整される */
+    margin-bottom: 20px; /* 下の余白 */
+    align-items: center;
+}
+
+
+
+.rakuten{
+background-color:black; 
+color: white;             
+border: none;             
+padding: 10px 20px;      
+font-size: 16px;          
+position: relative;      
+clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%); /* 右下端だけをカット */
+cursor: pointer;           
+}
+
