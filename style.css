@@ -25,6 +25,7 @@ header img {
 
 .side-logo{
     max-width: 200px;
+    margin-right: 40px;
 }
 
 .side-logo, .content .right-logo {
@@ -36,17 +37,18 @@ header img {
     height: auto; 
   }
 
-  .right-logo .wrap {
-    display: block; 
-    margin-top: 30px; 
-    margin-right: auto; 
-    margin-left: auto; 
-    width: 80%; 
-   
-    font-size: 1em;
-    cursor: pointer; 
-   
-  }
+.right-logo .wrap {
+  display: block; 
+  margin-top: 30px; 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 80%; 
+ 
+  font-size: 1em;
+  cursor: pointer; 
+ 
+}
+  
   
 
 
@@ -120,7 +122,7 @@ header img {
 .products-container {
     position: relative; 
     max-width: 800px;
-    margin: 80px auto 0; 
+    margin: 60px auto 0; 
     overflow: hidden; 
 }
 
@@ -188,7 +190,7 @@ header img {
     }
    
     .products-background {
-        height: 2550px; 
+        height: 2900px; 
         
     }
 
@@ -275,6 +277,8 @@ footer {
     -webkit-border-image: url('https://ukiukiwine.com/XmasSite/footerline.png') 30 stretch;
     -o-border-image: url('https://ukiukiwine.com/XmasSite/footerline.png') 30 stretch;
     border-image: url('https://ukiukiwine.com/XmasSite/footerline.png') 30 stretch;
+    padding-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 footer img {
