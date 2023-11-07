@@ -148,7 +148,7 @@ header img {
     gap: 10px;
     margin: 0 auto;
     max-width: 800px;
-    margin-top: 80px;   
+    margin-top: 70px;   
 }
 
 .product {
@@ -190,7 +190,7 @@ header img {
     }
    
     .products-background {
-        height: 2900px; 
+        height: 4280px; 
         
     }
 
@@ -234,7 +234,11 @@ header img {
     .footlogo img {
         margin-top: 20px; 
         width: 60%; 
-        height: auto; 
+        height: auto;
+    }
+    .product img {
+        width: 190px;
+        height: 190px;
     }
     
   }
@@ -289,7 +293,7 @@ footer img {
 .footer-image {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 .image-wrapper {
@@ -297,7 +301,6 @@ footer img {
     justify-content: center;
     padding: 20px 0;
 }
-
 
 .image-container {
     display: flex;
@@ -308,14 +311,22 @@ footer img {
     max-width: 1200px;
 }
 
-.image-container img {
-    width: 100%;
-    max-width: 350px; 
-    height: auto; 
-    margin-bottom: 20px;
-    align-items: center;
+.image-container a {
+    width: 100%;          /* リンクが親要素の幅を100%取るように設定 */
+    max-width: 350px;     /* 最大幅を350pxに設定 */
+    margin-bottom: 20px;  /* 下部のマージンを20pxに設定 */
+    text-decoration: none; /* リンクの下線を削除 */
+    color: inherit;        /* リンクのテキスト色を継承 */
+    align-items: center;   /* 中央揃え */
+    display: flex;         /* フレックスコンテナとして設定 */
+    justify-content: center; /* 中央揃え */
 }
 
+.image-container img {
+    width: 100%;       /* 画像が親要素の幅を100%取るように設定 */
+    height: auto;      /* 画像の高さが自動調整されるように設定 */
+    align-self: center; /* Flexboxによる自己配置で中央揃え */
+}
 
 
 .rakuten{
