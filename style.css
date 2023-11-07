@@ -78,7 +78,7 @@ header img {
 }
 
 .wrap:hover {
-    background-color: #fcc2f5;
+    background-color: #f0e8ef;
     cursor: pointer;
 }
 
@@ -154,8 +154,7 @@ header img {
 .product {
     width: 212px;
     margin-bottom: 10px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 /* レスポンシブ対応 */
@@ -227,6 +226,7 @@ header img {
         transform: scale(1.5); 
         transform-origin: center; 
       }
+
     .intro {
         /* 左右にマージンを追加 */
         margin: 0 10px;
@@ -339,3 +339,7 @@ position: relative;
 clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%);
 cursor: pointer;           
 }
+
+a {
+    text-decoration: none; /* 'wrap'クラスのリンクの下線を消す */
+  }
